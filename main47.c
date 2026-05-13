@@ -5,7 +5,7 @@ int main(){
     printf("enter a number=");
     scanf("%d",&n);
 
-    
+
  printf("final fibonacci number is %d\n",fib(n));
 
     return 0;
@@ -17,8 +17,10 @@ int fib(int n){
     else if(n==1){
         return 1;
     }
-    int x=fib(n-1)+fib(n-2);
-    printf("fibonacci number is %d\n",x);
+    int a=fib(n-1);
+    int b=fib(n-2);
+    int x=a+b;
+    printf("fibonacci is %d+%d=%d\n",a,b,x);
     return x;
 
 }
